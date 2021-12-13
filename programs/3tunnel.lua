@@ -1,4 +1,4 @@
---- Digs a 3x1 tunnel for the given distance
+--- Digs a 3x1 tunnel for the given distance (also places torches if available)
 function dig(dist)
     dist = dist or 50
     print('digging for ' .. tostring(dist) .. ' blocks...')
@@ -14,7 +14,7 @@ function dig(dist)
         turtle.digUp()
         turtle.digDown()
 
-        if dist % 10 == 0 then
+        if dist % 10 == 0 and turtle.getItemDetail()['name'] == 'minecraft:torch' then
             print('placing torch...')
             turtle.placeDown()
         end
