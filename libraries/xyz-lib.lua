@@ -2,6 +2,8 @@
 --- For keeping track of position and rotation
 --- and also moving automaticaly
 
+--- NOT READY FOR USE
+
 xyz = {}
 
 --- x is +F and -B, y is +R and -L. Z is for height

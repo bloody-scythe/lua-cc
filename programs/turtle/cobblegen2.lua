@@ -17,11 +17,9 @@ end
 
 --=========================--
 
-space = limit - item_count()
+print('log: space is  ' .. limit - item_count() .. '(' .. ( limit - item_count() ) / 64 .. ' stacks)')
 
-print('log: There is ' .. space .. ' items of space remaining.')
-
-while space >= 64 do
+while limit - item_count() >= 64 do
     repeat
     turtle.dig()
     until turtle.getItemCount() == 64
@@ -32,8 +30,7 @@ while space >= 64 do
     turtle.turnLeft()
     turtle.turnLeft()
 
-    space = space - 64
-    print('log: There is ' .. space .. ' items of space remaining.')
+    print('log: space is  ' .. limit - item_count() .. '(' .. ( limit - item_count() ) / 64 .. ' stacks)')
 end
 
 error("No space remaining !!!")
