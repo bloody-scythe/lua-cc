@@ -14,9 +14,11 @@ function dig(dist)
         turtle.digUp()
         turtle.digDown()
 
-        if dist % 10 == 0 and turtle.getItemDetail()['name'] == 'minecraft:torch' then
-            print('placing torch...')
-            turtle.placeDown()
+        if item then
+            if dist % 10 == 0 and item.name == 'minecraft:torch' then
+                print('placing torch...')
+                turtle.placeDown()
+            end
         end
 
         dist = dist - 1
