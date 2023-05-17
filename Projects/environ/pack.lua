@@ -1,12 +1,12 @@
 #!/usr/bin/lua
-project="brainfuck"
+project="environ"
 
 files = {
-"bin/bfc.lua",
-"bin/fuck.lua",
-"lib/brainfuck.lua"
+"bin/cat.lua",
+"bin/clock.lua",
+"lib/sides.lua",
+"startup/startup.lua"
 }
-
 
 installer = ""
 

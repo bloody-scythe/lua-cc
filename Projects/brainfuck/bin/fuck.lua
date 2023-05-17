@@ -15,7 +15,7 @@ local function main()
     brainfuck.fuck(src)
 
   else
-    inputfile = arg[1]
+    input = arg[1]
     input_exists = fs.exists(input)
     if input_exists then
       local src = fs.open(input,'r'):readAll()

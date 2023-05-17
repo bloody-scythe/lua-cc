@@ -1,4 +1,4 @@
-function gametime()    
+function gametime()
     time = os.time()
     if time >= 8 and time < 18.5 then
         term.setTextColor(colors.green)
@@ -21,9 +21,9 @@ function text ()
 end
 
 for k,v in pairs(arg) do
-    if v == '-d' then 
-        text() 
-        return   
+    if v == '-d' then
+        text()
+        return
     end
 end
 
@@ -32,4 +32,4 @@ while true do
     term.setCursorPos(1,1)
     text()
     sleep(0.5)
-end 
+end
