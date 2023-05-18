@@ -1,2 +1,4 @@
 
 init.lua
+Projects/brainfuck/brainfuck_install.lua
+Projects/environ/environ_install.lua
