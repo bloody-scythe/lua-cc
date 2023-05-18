@@ -29,6 +29,6 @@ end
 
 --- argument handling
 if arg[1] == '-h' or arg[1] == '--help' then help() os.exit() end
-if arg[1] == '-t' then fuck_this = true table.remove(arg, 1) end
+if arg[1] == '-it' then fuck_this = true table.remove(arg, 1) end
 
 main()
